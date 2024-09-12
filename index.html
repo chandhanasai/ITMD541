@@ -1,26 +1,81 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chandhana Sai - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div>
         <div id="main-container">
-            <img id="image-id" src="https://media.licdn.com/dms/image/v2/D5603AQEzy-L4AK_Q4w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719698980135?e=1731542400&v=beta&t=ygGGCvMsIWVG7eo1prU0aSQRBoAVWu_bQx1KoJTrTkc" alt="">
+            <img id="image-id" src="https://media.licdn.com/dms/image/v2/D5603AQEzy-L4AK_Q4w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719698980135?e=1731542400&v=beta&t=ygGGCvMsIWVG7eo1prU0aSQRBoAVWu_bQx1KoJTrTkc" alt="Chandhana Sai Profile Picture">
         </div>
         <p id="title-id">Chandhana Sai Mosali</p>
-        <p id="designation-id">Project management Intern</p>
-        <p id="bio-id">I am a dedicated 2nd-year student majoring in Information Technology and Management. I’ve maintained a strong academic record with a GPA of 3.8/4, excelling in courses like Intro to Data Networks, where I earned an A grade. Currently, I’m gaining practical experience by working on projects such as creating HTML and CSS user interfaces and managing a class GitHub repository. My commitment to learning and growing in the IT field drives me to continue building my skills and knowledge through these achievements and ongoing projects.</p>
+        <p id="designation-id">Project Management Intern</p>
+        <p id="bio-id">Recent computer science graduate with a strong passion for leveraging technology to tackle complex challenges. Equipped with a solid foundation in software development, project management, and business analytics. Proficient in management tools like JIRA, Microsoft Visio, and Power BI. Demonstrated analytical and problem-solving abilities cultivated during academic studies. Eager to contribute to innovative projects in the management sector and apply new ideas to gain practical knowledge.</p>
+
+        <!-- Flexbox Section for Education -->
+        <div class="flexbox-container">
+            <div class="dropdown-header" onclick="toggleDropdown('education-dropdown')">
+                <h3>Education</h3>
+            </div>
+            <div id="education-dropdown" class="dropdown-content">
+                <p>Illinois Institute of Technology, College of Computing, Chicago, IL <br> Master of Science, Information Technology and Management <br> Aug 2023 – May 2025 | GPA: 3.80/4.0</p>
+                <p>Narayana Engineering College, Nellore, AP, India <br> Bachelor of Technology (B. Tech) Computer Science and Engineering <br> Jun 2018 - May 2022 | GPA: 3.02/4.0</p>
+            </div>
+        </div>
+
+        <!-- Flexbox Section for Professional Experience -->
+        <div class="flexbox-container">
+            <div class="dropdown-header" onclick="toggleDropdown('professional-dropdown')">
+                <h3>Professional Experience</h3>
+            </div>
+            <div id="professional-dropdown" class="dropdown-content">
+                <p><b>Excelerate, PROJECT MANAGEMENT INTERN, VIRTUAL</b> <br> Jun 2023 – Jul 2023 <br> - Led the creation of a comprehensive project plan to facilitate the successful execution of a global event hosted by GlobalShala. <br> - Collaborated with the GlobalShala team to define project objectives, scope, and deliverables. <br> - Developed and managed project timelines, milestones, and critical paths, ensuring project goals were met on schedule.</p>
+            </div>
+        </div>
+
+        <!-- Flexbox Section for Project Experience -->
+        <div class="flexbox-container">
+            <div class="dropdown-header" onclick="toggleDropdown('project-dropdown')">
+                <h3>Project Experience</h3>
+            </div>
+            <div id="project-dropdown" class="dropdown-content">
+                <p><b>Product Application for Grocery Store, Personal Project</b> <br> May 2024 – Present <br> - Led project initiation by developing a comprehensive plan and securing necessary resources.</p>
+                <p><b>Railway Reservation System, Academic Project</b> <br> Jan 2022 – Mar 2022 <br> - Implemented core functionalities like train information, seat availability, user accounts, and PNR generation using object-oriented programming.</p>
+            </div>
+        </div>
+
+        <!-- Flexbox Section for Skills -->
+        <div class="flexbox-container">
+            <div class="dropdown-header" onclick="toggleDropdown('skills-dropdown')">
+                <h3>Skills</h3>
+            </div>
+            <div id="skills-dropdown" class="dropdown-content">
+                <p>Programming Languages: Python, MySQL, NoSQL, HTML, CSS <br> Tools: AWS, JIRA, Microsoft Office, Tableau, Power BI <br> Soft Skills: Problem-solving, Project budgeting, Documentation, Analytical skills <br> Certifications: Google Project Management (Coursera), May 2024</p>
+            </div>
+        </div>
+
         <p>References</p>
         <div id="reference-container">
             <a href="https://www.youtube.com">Youtube</a>
-            <a href="https://github.com/chandhanasai">Github</a>       
+            <a href="https://github.com/chandhanasai">Github</a>
         </div>
     </div>
 
-    
-
+    <script>
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById(id);
+            if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+    </script>
 </body>
+
 </html>
